@@ -1,150 +1,124 @@
-# Awesome Prompts and Flows 🌟
-A curated collection of the best **real, practical AI examples** across major platforms including:
+# Awesome Prompts and Flows 🌟  
+[English Version](README_EN.md)
 
-**GPT, Llama, Qwen, NanoBanana, ComfyUI, Dify, Coze, LangChain, and more.**
+一个跨平台的 **真实 AI 示例集合**，覆盖：
 
-Everything here is a **real task example** — 可直接使用，无套路。
+**LLM · NanoBanana · ComfyUI · Dify · Coze · LibLib**
 
-欢迎 Star ⭐｜欢迎 PR 🤝｜一起打造全网最强 AI 示例库！
+本仓库中的每个示例包含：
+
+- `input.xxx`（示例输入）  
+- `output.xxx`（模型真实输出）  
+- `prompt.txt` 或 `flow.json` 或 `code.py`（核心逻辑）  
+- `readme.md`（说明文档）  
+
+全部内容皆可复现，真实有效，无套路。
 
 ---
 
-# 📁 Repository Structure
+## 📁 仓库结构（平台 → 示例）
 
 ```
 awesome-prompts-and-flows/
 │
 ├── gpt/
-│   ├── text-extraction/
-│   │   ├── input.txt
-│   │   ├── output.json
-│   │   └── readme.md
-│   ├── resume-polish/
-│   └── reasoning-o1-style/
-│
 ├── qwen/
-│   ├── vision-analysis/
-│   └── table-understanding/
-│
 ├── nano-banana/
-│   ├── quick-code-fix/
-│   ├── sql-cleaner/
-│   └── short-reply/
-│
 ├── comfyui/
-│   ├── rotate-head-3d/
-│   ├── image-inpaint/
-│   └── face-refine/
-│
 ├── dify/
-│   ├── json-cleaner/
-│   ├── auto-evaluator/
-│   └── dataset-transform/
-│
 ├── coze/
-│   ├── faq-bot/
-│   └── knowledge-agent/
-│
-├── langchain/
-│   ├── multi-tool-agent/
-│   └── data-processing-pipeline/
-│
-├── tools/
-│   ├── json-fixer/
-│   ├── pdf-to-md/
-│   └── image-to-text/
-│
-└── assets/
+└── tools/
 ```
 
 ---
 
-# 🔍 示例结构说明
+## 🔍 示例目录标准（必须包含 4 项）
 
-每个平台下的子目录就是一个 **真实任务示例**，包含：
-
-- `input.xxx`  
-- `output.xxx`  
-- `readme.md`（用途说明 + 使用说明）  
-- （可选）`flow.json` / 脚本文件  
+```
+example-name/
+  ├── input.xxx
+  ├── output.xxx
+  ├── prompt.txt   或 flow.json 或 code.py
+  └── readme.md
+```
 
 ---
 
-# 📝 示例 readme.md 模板
+## 📝 示例 readme.md 模板
 
 ```
 # 示例名称
 
 ## 🧩 作用
-一句话描述该示例能做什么。
+一句话说明该示例能做什么。
 
 ---
 
-## 📥 示例输入（input）
-文件：`input.xxx`
+## 📝 Prompt / Flow / Code
+- Prompt 示例：`prompt.txt`
+- 工作流示例：`flow.json`
+- Python Agent 示例：`code.py`
 
+---
+
+## 📥 输入（input.xxx）
 ```
-（贴输入示例内容）
+（粘贴示例输入内容）
 ```
 
 ---
 
-## 📤 示例输出（output）
-文件：`output.xxx`
-
+## 📤 输出（output.xxx）
 ```
-（贴模型真实输出）
+（粘贴示例输出）
 ```
 
 ---
 
 ## 💡 使用说明
-- 推荐模型
-- 输入格式要求
-- 适用场景
+- 推荐模型 / 工具  
+- 使用方式  
+- 注意事项  
 
 ---
 
-## 🗂️ 文件说明
-- input.xxx  
-- output.xxx  
-- readme.md  
-- flow.json（如适用）
+## 📂 文件说明
+- input.xxx：示例输入  
+- output.xxx：模型真实输出  
+- prompt.txt / flow.json / code.py：核心逻辑  
+- readme.md：说明文档
 ```
 
 ---
 
-# 🤝 Contributing
+## 🤝 如何贡献
 
-欢迎提交任何平台的 **真实可运行示例**：
+欢迎提交各种平台的真实示例：
 
-- GPT / Qwen / Llama 示例  
-- ComfyUI flow  
-- Dify flow  
-- Coze bot flow  
+- GPT / Qwen / Llama  
+- ComfyUI JSON  
+- Dify Flow  
+- Coze Bot Flow  
 - NanoBanana 示例  
-- LangChain pipeline  
-- 工具脚本示例  
 
-**规则：**
+**贡献规则：**
 
-1. 顶层按平台分类（gpt / nano-banana / comfyui…）  
-2. 每个示例为独立文件夹  
-3. 必须包含 input / output / readme.md  
-4. 文件名使用小写 + 中横线  
-5. 大文件放 assets 或外链
+1. 顶层按平台分类  
+2. 每个示例必须独立文件夹  
+3. 必须包含 input / output / readme + prompt/flow/code  
+4. 文件命名用小写 + 中横线  
+5. 大文件放外链  
 
 ---
 
-# ⭐ Roadmap
-
-- 每周新增 10 个示例  
-- 支持 Sora / Runway / Claude / Grok  
-- 增加示例搜索功能  
-- 创建网页版 Example Viewer  
-- 增加中英双语版本  
+## 📅 Roadmap
+- 每周新增示例  
+- 支持更多平台（Sora / Claude / Runway / Grok）  
+- 增加 Example Viewer  
+- 增加搜索功能  
+- 完整双语文档  
 
 ---
 
-# 📄 License
+## 📄 License  
 MIT License
