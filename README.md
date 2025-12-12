@@ -32,6 +32,18 @@ awesome-prompts-and-flows/
 
 ---
 
+## 🗂️ 示例总览（自动生成）
+
+下列内容由 `scripts/update_readme.py` 自动维护，请勿手动修改。
+
+<!-- AUTO-GENERATED:START -->
+| 模型（平台） | 说明 | 输入 | 输出 | Prompt | 文件夹 |
+| --- | --- | --- | --- | --- | --- |
+| Nano Banana<br><strong>照片 → 角色手办展示场景</strong> | 将真实人物照片转换为“角色手办 + 包装盒 + Blender”完整展示场景。 | 示例输入图（`input.png`）<br>![示例输入图](nano-banana/figure_creation_scene/input.png) | 生成效果（`output.jpg`）<br>![生成效果](nano-banana/figure_creation_scene/output.jpg) | [prompt.txt](nano-banana/figure_creation_scene/prompt.txt) | [文件夹](nano-banana/figure_creation_scene)<br>[README](nano-banana/figure_creation_scene/README.md) |
+<!-- AUTO-GENERATED:END -->
+
+---
+
 ## 🔍 示例目录标准（必须包含 4 项）
 
 ```
@@ -88,6 +100,34 @@ example-name/
 - prompt.txt / flow.json / code.py：核心逻辑  
 - readme.md：说明文档
 ```
+
+---
+
+## 🧾 metadata.json（可选但推荐）
+
+若需在首页示例总览中展示多输入/输出、视频或自定义图片说明，可在示例目录中添加 `metadata.json`：
+
+```json
+{
+  "title": "示例名称（可覆盖 README）",
+  "description": "一句话说明",
+  "inputs": [
+    { "file": "input.png", "label": "示例输入图", "type": "image" },
+    { "file": "input.mp4", "label": "输入视频", "type": "video" }
+  ],
+  "outputs": [
+    { "file": "output.jpg", "label": "生成结果", "type": "image" }
+  ],
+  "core": ["prompt.txt", "flow.json"]
+}
+```
+
+字段说明：
+- `title` / `description`：覆盖自动提取的标题与说明。
+- `inputs` / `outputs`：数组元素可指定 `file`、`label`、`type=image|video|file`。
+- `core`：核心 prompt/flow/code 文件数组，将在 README 中生成链接。
+
+脚本优先读取 metadata，缺失字段会自动扫描文件名（input*/output*/prompt* 等）。
 
 ---
 
