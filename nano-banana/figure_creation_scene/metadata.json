@@ -1,0 +1,21 @@
+{
+  "title": "照片 → 角色手办展示场景",
+  "description": "将真实人物照片转换为“角色手办 + 包装盒 + Blender”完整展示场景。",
+  "inputs": [
+    {
+      "file": "input.png",
+      "label": "示例输入图",
+      "type": "image"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "output.jpg",
+      "label": "生成效果",
+      "type": "image"
+    }
+  ],
+  "core": [
+    "prompt.txt"
+  ]
+}
